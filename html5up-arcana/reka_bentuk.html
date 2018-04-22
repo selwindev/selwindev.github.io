@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>2.2 reka bentuk pangkalan data hubungan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">SAINS KOMPUTER <em>TINGKATAN 4</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">HOME</a></li>
+								<li>
+									<a href="#">BIDANG</a>
+									<ul>
+										<li><a href="#">BIDANG 1</a>
+											<ul>
+												<li><a href="masalah.html">1.1 strategi penyelesaian masalah</a></li>
+												<li><a href="algoritma.html">1.2 Algoritma</a></li>
+												<li><a href="pemboleh_ubah.html">1.3 pemboleh ubah, pemalar dan jenis data</a></li>
+												<li><a href="struktur_kawalan.html">1.4 Struktur kawalan</a></li>
+												<li><a href="Amalan.html">1.5 Amalan terbaik pengaturcaran</a></li>
+												<li><a href="Modular.html">1.6 Modular dan struktur data</a></li>
+												<li><a href="pembangunan_Aplikasi.html">1.7 pembangunan Aplikasi</a></li>
+											</ul>
+										</li>
+										<li><a href="#">BIDANG 2</a>
+											<ul>
+												<li><a href="data_hubungan.html">2.1 pangkalan data hubungan</a></li>
+												<li><a href="reka_bentuk.html">2.2 reka bentuk pangkalan data hubungan</a></li>
+												<li><a href="pembangunan_pangkalan.html">2.3 pembangunan pangkalan data hubungan</a></li>
+												<li><a href="pembangunan_sistem.html">2.4 pembangunan sistem pengkalan data</a></li>
+											</ul>
+										</li>
+										<li><a href="#">BIDANG 3</a>
+											<ul>
+												<li><a href="interaksi.html">3.1 reka bentuk interaksi</a></li>
+												<li><a href="skrin.html">3.2 paparan dan reka bentuk skrin</a></li>
+											</ul>
+										</li>	
+									</ul>
+								</li>
+								<li class="current"><a href="reka_bentuk.html">2.2 reka bentuk pangkalan data hubungan</a></li>
+								<li><a href="soalan.html">AKTIVITI</a></li>
+								<li><a href="guru.html">GURU</a></li>
+								<li><a href="forum.html">FORUM</a></li>
+								<li><a href="download.html">DOWNLOAD</a></li>
+							</ul>
+						</nav>
+
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u(narrower)">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>Standard Pembelajaran</h3>
+											<p>2.2.1 Mengenalpasti medan (field), rekod jadual (table) dan kekunci bagi pangkalan data yang akan dibangunkan<br><br>
+											2.2.2 Menentukan kunci primer dan/atau kunci asing yang sesuai bagi setiap entiti<br><br>
+											2.2.3 Menghasilkan gambar rajah perhubungan entiti (ERD) untuk memodelkan data hubungan<br><br>
+											2.2.4 Mereka bentuk pangkalan data hubungan dengan menukar ERD ke skema hubungan<br><br>
+											2.2.5 Menjelaskan konsep kebergantungan fungsi sepenuh, kebergantungan fungsi separa dan kebergantungan fungsi transitif<br><br>
+											2.2.6 Melaksanakan proses penormalan data sehingga 3NF terhadap skema hubungan
+											</p>
+											
+											
+										</section>
+										
+
+										
+
+								</div>
+							</div>
+							<div class="8u  12u(narrower) important(narrower)">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>2.2  Reka Bentuk Pangkalan Data Hubungan</h2>
+												
+											</header>
+
+											
+
+											<p style="text-align:justify">Pangkalan data dengan model hubungan boleh digunakan untuk mengatasi masalah kelewahan dan ketidaktekalan data secara berkesan. 
+											</p>
+
+											
+											
+											
+											
+											<h3>2.2.1 Kunci Primer dan Kunci Asing </h3>
+											<p style="text-align:justify">Kunci Hubungan menghubungkan jadual-jadual yang mewakili entiti-entiti dalam set hubungan.<br>
+											Kunci hubungan ialah nama atribut khusus dalam jadual yang digunakan untuk mengekalkan integriti data hubungan. Dua jenis kunci hubungan ialah kunci primer dan kunci asing<br><br>
+											Kunci Primer ialah atribut(atau gabungan beberapa atribut) dengan nilai yang unik untuk mewakili setiap baris rekod dalam sesebuah jadual. Kunci primer tidak boleh dibiarkan kosong (null) dan tidak boleh mengandungi nilai yang berulang.<br><br>
+											Kunci Asing ialah atribut yang mengandungi nilai kunci primer daripada jadual sasaran. Dengan kata lain, untuk menghasilkan hubungan di antara dua jadual, jadual yang ingin mewujudkan hubungan akan menambahkan atribut kunci primer daripada jadual sasaran sebagai kunci asing.
+											<br><br>
+											
+											<em>JIKA MAHU BERLAJAR MELALUI SLIDE DAN VIDEO BOLEH   <a href="reka_bentuk1.html" class="button"> TEKAN DISINI</a></em>
+											</p>
+											
+											<h3>2.2.2 Gambar Rajah Perhubungan Entiti (ERD)</h3>
+											<p style="text-align:justify">Gambar Rajah Perhubungan Entiti (ERD) ialah teknik grafik untuk memodelkan data. Model yang dihasilkan adalah pada tahap konsep dan tidak terikat kepada mana-mana Sistem Pengurusan Pangkalan Data. ERD mewakili persekitaran dalam struktur entiti, hubungan entiti dan atribut entiti.
+											
+											<br><br>
+											
+											<em>JIKA MAHU BERLAJAR MELALUI SLIDE DAN VIDEO BOLEH   <a href="reka_bentuk2.html" class="button"> TEKAN DISINI</a></em> 
+											</p>
+											
+											
+											
+											<h3>2.2.3 Mereka Bentuk Pangkalan Data Hubungan </h3>
+											<p style="text-align:justify">Pertimbangan dalam reka bentuk pangkalan data:<br><br>
+											1)Reka bentuk mestilah mengandungi data yang lengkap dan diperlukan sahaja<br><br>
+											2)Reka bentuk hendaklah memudahkan penyimpanan, pencarian dan pengemaskinian<br><br>
+											3)Reka bentuk mesti menggunakan model yang sesuai, misalnya model pangkalan data hubungan yang popular.
+											
+											<br><br>
+											
+											<em>JIKA MAHU BERLAJAR MELALUI SLIDE DAN VIDEO BOLEH   <a href="reka_bentuk3.html" class="button"> TEKAN DISINI</a></em> 
+											</p>
+											
+											<h3>2.2.4 Kebergantungan fungsi sepenuh, separa dan transitif </h3>
+											<p style="text-align:justify">Setiap atribut dalam jadual bergantungan kepada atribut kunci primer. Sebagai contoh dalam jadual murid, atribut-atribut seperti Nama, Jantina, dan Tingkatan bergantung kepada atribut kunci primer. IDMurid. Menganalisis kebergantungan membolehkan sesebuah jadual dipecahkan kepada jadual hubungan yang lebih kecil untuk mengurangkan kelewahan data tanpa menjejaskan integriti rujukan. Proses ini disebut penormalan dan memahami konsep kebergantungan amat penting untuk proses ini.
+											
+											<br><br>
+											
+											<em>JIKA MAHU BERLAJAR MELALUI SLIDE DAN VIDEO BOLEH   <a href="reka_bentuk4.html" class="button"> TEKAN DISINI</a></em>
+											</p>
+											
+											<h3>2.2.5 Proses Penormalan Data Sehingga 3NF terhadap</h3>
+											<p style="text-align:justify">Skema Hubungan<br><br> 
+											
+											Jadual baharu biasanya berada dalam bentuk tidak ternormal, ataupun 0NF. Jadual 0NF boleh berfungsi tetapi akan menyebabkan penyimpanan data lewah yang banyak dan boleh menjejaskan integriti data apabila kecuaian berlaku sewaktu kemas kini.. Oleh itu, jadual 0NF tidak sesuai dilaksanakan dalam sistem pangkalan data. <br><br>
+											
+											Penormalan ialah satu kaedah menganalisis jadual-jadual berasaskan atribut kunci dan kebergantungan fungsi dengan tujuan mengurangkan duplikasi data dalam pangkalan data. Penormalan, pada kebiasannya, akan memecahkan jadual 0NF kepada dua atau lebih jadual-jadual hubungan yang sudah ternormal.<br><br> 
+											
+											<h4>Langkah untuk penormalan adalah:</h4><br><br>
+											1) Tukarkan skema perhubungan 0NF kepada 1NF<br><br>
+											2) Tukarkan skema hubungan 1NF kepada 2NF<br><br>
+											3) Tukarkan skema hubungan  2NF kepada 3NF<br><br>
+											<br><br>
+											
+											<em>JIKA MAHU BERLAJAR MELALUI SLIDE DAN VIDEO BOLEH   <a href="reka_bentuk5.html" class="button"> TEKAN DISINI</a></em>
+											</p>
+											
+										
+									</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="3u 6u(narrower) 12u$(mobilep)">
+						
+								<h3>LINK BELAJAR ONLINE</h3>
+								<ul class="links">
+									<li><a href="https://www.w3schools.com/">W3school</a></li>
+									<li><a href="https://www.codecademy.com/">Codecademy</a></li>
+								</ul>
+								
+							</section>
+							
+							<section class="3u 6u$(narrower) 12u$(mobilep)">
+								<h3>LINK UNTUK GURU</h3>
+								<ul class="links">
+									<li><a href="https://www.moe.gov.my/index.php/my/">KEMENTERIAN PENDIDIKAN MALAYSIA</a></li>
+								</ul>
+								
+							</section>
+							<section class="6u 12u(narrower)">
+								<h3>Get In Touch</h3>
+								<form>
+									<div class="row 50%">
+										<div class="6u 12u(mobilep)">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="6u 12u(mobilep)">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0240)https://connect.topicit.net/button/light?id=topicit-connect-0&redirect=http%3A%2F%2Fsingh.forumotion.asia%2F&lang=en&loc=https%3A%2F%2Fconnect.topicit.net%2F&login=http%3A%2F%2Fsingh.forumotion.asia%2Ftopicit%2Findex.php%2Fconnect&version=1 -->
+<html style="margin:0;padding:0;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="robots" content="noindex, nofollow">
+<title>Topic'it Connect</title>
+<style type="text/css">       
+        * {
+            margin:0;
+            padding:0;
+        }
+        #connectBtn{
+                                    width: 95px;
+                                        padding: 5px 8px 6px 27px;
+                background-position: left center;
+                        background-color: #2271D5;
+            background-image:url("/images/connect-button/icon-white50x50.png");
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            color: #ffffff;
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: bold;
+            text-align: left;
+            text-decoration: none;
+            min-height: 25px;
+            border:0;
+            border-radius: 3px;
+            font-family: Helvetica, Arial, sans-serif;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            line-height: 1;
+            cursor:pointer;
+            cursor:hand;
+        }
+        #connectBtn:-moz-focus-inner {
+            border:0;
+            padding:0;
+            margin: 0; 
+        }
+        #connectBtn:hover {
+            background-color: #289CDB !important;
+        }
+    </style>
+<script type="text/javascript">
+        function redirectLogin( code, userkey ) {
+            window.parent.location.replace("http://singh.forumotion.asia/topicit/index.php/connect?c=" + code + "&uk=" + userkey + "&redirect_uri=" + encodeURIComponent(topicitConnect.redirUrl));
+        }
+    </script>
+</head>
+<body>
+<button class="topicit-init" id="connectBtn" type="button">Topic'it</button>
+<script type="text/javascript">
+        var topicitConnect = {
+            "authUrl": 'https://connect.topicit.net/authorize',
+            "redirUrl": 'http://singh.forumotion.asia/'
+        };
+        
+        (function() {
+            try {
+                var button = {
+                    action: "connect-button",
+                    id: "topicit-connect-0",
+                    dimensions : {
+                        height: 0,
+                        width: 0
+                    }
+                };
+
+                topicitConnect.redirUrl =  topicitConnect.redirUrl.replace(/#.*$/g, '');
+                var connectBtn = document.getElementById('connectBtn');
+                if(connectBtn) {
+                    var submitFunction = function() {
+                        var w = 500;
+                        var h = 610;
+                        var centerLeft = 0;
+                        var centerTop = 0;
+                        try{
+                            centerLeft = window.outerWidth / 2 + window.screenX - ( w / 2);
+                            centerTop = window.outerHeight / 2 + window.screenY - ( h / 2);
+                        } catch(e) {
+                        } finally {
+                        }
+                        window.open(topicitConnect.authUrl + '?redirect_uri=' + encodeURIComponent(topicitConnect.redirUrl), "TopicitConnect","width="+w+",height="+h+",left="+centerLeft+",top="+centerTop+",menubar=no");
+                    };
+                    
+                    connectBtn.addEventListener('click', submitFunction, false);
+                    connectBtn.addEventListener('touchstart', submitFunction, false);
+                    
+                    button.dimensions.height = Math.max(/*connectBtn.scrollHeight, */connectBtn.offsetHeight, connectBtn.clientHeight, connectBtn.offsetHeight);
+                    button.dimensions.width = Math.max(/*connectBtn.scrollWidth, */connectBtn.offsetWidth, connectBtn.clientWidth, connectBtn.offsetWidth);
+                    
+                    if (parent.postMessage) {
+                        parent.postMessage(button, "*");
+                    }
+                }
+            } catch(e) {
+                if(console) {
+                    console.error("An error occured: " + e);
+                }
+            }
+        })();
+    </script>
+
+</body></html>
